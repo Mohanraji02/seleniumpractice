@@ -1,0 +1,577 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 15 11:26:55 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>100 seconds (100248 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='session.seleniumpractice.execution()'><b>execution</b><br>Test class: session.seleniumpractice<br>Parameters: billamohan02@gmail.com, bcbcbcb</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+dState&quot;:2,&quot;seen&quot;:true}
+1589522226035	DeferredSave.extensions.json	DEBUG	Save changes
+1589522226035	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522226035	addons.xpi-utils	DEBUG	Updating add-on states
+1589522226036	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522226039	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522226040	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522226041	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522226041	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522226059	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522226060	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522226060	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522226065	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522226066	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522226066	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522226066	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522228500	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522228517	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522228560	DeferredSave.extensions.json	DEBUG	Starting write
+1589522228687	addons.repository	DEBUG	No addons.json found.
+1589522228688	DeferredSave.addons.json	DEBUG	Save changes
+1589522228691	DeferredSave.addons.json	DEBUG	Starting timer
+1589522228863	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522228863	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522228864	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522228874	DeferredSave.addons.json	DEBUG	Starting write
+1589522228912	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522229060	DeferredSave.addons.json	DEBUG	Write succeeded
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0
+1589522248929	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.2.6
+1589522249263	addons.manager	DEBUG	shutdown
+1589522249263	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1589522249264	addons.xpi	DEBUG	shutdown
+1589522249264	addons.xpi-utils	DEBUG	shutdown
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1589522249267	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1589522249268	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1589522249269	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1589522249274	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1589522249277	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;DESKTOP-0UJ338V&apos;, ip: &apos;192.168.50.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:221)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at session.seleniumpractice.execution(seleniumpractice.java:31)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+dState&quot;:2,&quot;seen&quot;:true}
+1589522226035	DeferredSave.extensions.json	DEBUG	Save changes
+1589522226035	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522226035	addons.xpi-utils	DEBUG	Updating add-on states
+1589522226036	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522226039	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522226040	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522226041	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522226041	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522226059	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522226060	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522226060	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522226065	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522226066	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522226066	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522226066	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522228500	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522228517	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522228560	DeferredSave.extensions.json	DEBUG	Starting write
+1589522228687	addons.repository	DEBUG	No addons.json found.
+1589522228688	DeferredSave.addons.json	DEBUG	Save changes
+1589522228691	DeferredSave.addons.json	DEBUG	Starting timer
+1589522228863	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522228863	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522228864	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522228874	DeferredSave.addons.json	DEBUG	Starting write
+1589522228912	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522229060	DeferredSave.addons.json	DEBUG	Write succeeded
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0
+1589522248929	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.2.6
+1589522249263	addons.manager	DEBUG	shutdown
+1589522249263	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1589522249264	addons.xpi	DEBUG	shutdown
+1589522249264	addons.xpi-utils	DEBUG	shutdown
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1589522249267	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1589522249268	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1589522249269	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1589522249274	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1589522249277	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 32 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3683216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3683216'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+dState":2,"seen":true}
+1589522226035	DeferredSave.extensions.json	DEBUG	Save changes
+1589522226035	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522226035	addons.xpi-utils	DEBUG	Updating add-on states
+1589522226036	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522226039	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522226040	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522226041	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522226041	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522226059	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522226060	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522226060	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522226065	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522226066	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522226066	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522226066	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522228500	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522228517	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522228560	DeferredSave.extensions.json	DEBUG	Starting write
+1589522228687	addons.repository	DEBUG	No addons.json found.
+1589522228688	DeferredSave.addons.json	DEBUG	Save changes
+1589522228691	DeferredSave.addons.json	DEBUG	Starting timer
+1589522228863	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522228863	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522228864	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522228874	DeferredSave.addons.json	DEBUG	Starting write
+1589522228912	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522229060	DeferredSave.addons.json	DEBUG	Write succeeded
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0
+1589522248929	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.2.6
+1589522249263	addons.manager	DEBUG	shutdown
+1589522249263	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1589522249264	addons.xpi	DEBUG	shutdown
+1589522249264	addons.xpi-utils	DEBUG	shutdown
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1589522249267	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1589522249268	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1589522249269	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1589522249274	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1589522249277	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'DESKTOP-0UJ338V', ip: '192.168.50.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:221)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at session.seleniumpractice.execution(seleniumpractice.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+dState":2,"seen":true}
+1589522226035	DeferredSave.extensions.json	DEBUG	Save changes
+1589522226035	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522226035	addons.xpi-utils	DEBUG	Updating add-on states
+1589522226036	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522226039	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522226039	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522226040	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522226041	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522226041	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522226059	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522226060	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522226060	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522226060	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522226065	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522226066	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522226066	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522226066	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522226066	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522228500	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522228517	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522228517	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522228560	DeferredSave.extensions.json	DEBUG	Starting write
+1589522228687	addons.repository	DEBUG	No addons.json found.
+1589522228688	DeferredSave.addons.json	DEBUG	Save changes
+1589522228691	DeferredSave.addons.json	DEBUG	Starting timer
+1589522228863	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522228863	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522228864	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522228874	DeferredSave.addons.json	DEBUG	Starting write
+1589522228912	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522229060	DeferredSave.addons.json	DEBUG	Write succeeded
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1589522248928	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0
+1589522248929	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.2.6
+1589522249263	addons.manager	DEBUG	shutdown
+1589522249263	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1589522249264	addons.xpi	DEBUG	shutdown
+1589522249264	addons.xpi-utils	DEBUG	shutdown
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1589522249265	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1589522249267	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1589522249268	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1589522249269	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1589522249274	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1589522249277	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 32 more
+</pre></div></td>
+<td>51</td>
+<td>session.seleniumpractice@16a51ab</td></tr>
+<tr>
+<td title='session.seleniumpractice.execution()'><b>execution</b><br>Test class: session.seleniumpractice<br>Parameters: mohan, mohan123</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+bAdvisor&quot;,&quot;creator&quot;:null,&quot;homepageURL&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;homepageURL&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;homepageURL&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;42.0a1&quot;,&quot;maxVersion&quot;:&quot;*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:true,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1589522272082	DeferredSave.extensions.json	DEBUG	Save changes
+1589522272082	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522272082	addons.xpi-utils	DEBUG	Updating add-on states
+1589522272083	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522272086	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522272087	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522272089	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522272089	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522272113	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522272113	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522272114	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522272121	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522272121	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522272121	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522272122	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522272122	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522272122	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522274296	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522274306	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522274306	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522274307	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522274335	DeferredSave.extensions.json	DEBUG	Starting write
+1589522274549	addons.repository	DEBUG	No addons.json found.
+1589522274549	DeferredSave.addons.json	DEBUG	Save changes
+1589522274553	DeferredSave.addons.json	DEBUG	Starting timer
+1589522274791	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522274791	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522274792	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522274797	DeferredSave.addons.json	DEBUG	Starting write
+1589522274803	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522274836	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: https://static-media-prod-cdn.itsre-sumo.mozilla.net/static/build/common-min.04eaf3952519.js, line 1: TypeError: navToggle.forEach is not a function
+JavaScript warning: https://www.youtube.com/yts/jsbin/www-embed-player-vflYCjgWi/www-embed-player.js, line 12: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;DESKTOP-0UJ338V&apos;, ip: &apos;192.168.50.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:221)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at session.seleniumpractice.execution(seleniumpractice.java:31)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+bAdvisor&quot;,&quot;creator&quot;:null,&quot;homepageURL&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;homepageURL&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;homepageURL&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;42.0a1&quot;,&quot;maxVersion&quot;:&quot;*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:true,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1589522272082	DeferredSave.extensions.json	DEBUG	Save changes
+1589522272082	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522272082	addons.xpi-utils	DEBUG	Updating add-on states
+1589522272083	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522272086	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522272087	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522272089	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522272089	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522272113	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522272113	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522272114	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522272121	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522272121	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522272121	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522272122	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522272122	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522272122	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522274296	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522274306	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522274306	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522274307	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522274335	DeferredSave.extensions.json	DEBUG	Starting write
+1589522274549	addons.repository	DEBUG	No addons.json found.
+1589522274549	DeferredSave.addons.json	DEBUG	Save changes
+1589522274553	DeferredSave.addons.json	DEBUG	Starting timer
+1589522274791	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522274791	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522274792	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522274797	DeferredSave.addons.json	DEBUG	Starting write
+1589522274803	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522274836	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: https://static-media-prod-cdn.itsre-sumo.mozilla.net/static/build/common-min.04eaf3952519.js, line 1: TypeError: navToggle.forEach is not a function
+JavaScript warning: https://www.youtube.com/yts/jsbin/www-embed-player-vflYCjgWi/www-embed-player.js, line 12: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 32 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29159990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29159990'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+bAdvisor","creator":null,"homepageURL":null,"developers":null,"translators":null,"contributors":null,"locales":["da"]},{"name":"McAfee® WebAdvisor","description":"McAfee® WebAdvisor","creator":null,"homepageURL":null,"developers":null,"translators":null,"contributors":null,"locales":["tr"]},{"name":"McAfee® WebAdvisor","description":"McAfee® WebAdvisor","creator":null,"homepageURL":null,"developers":null,"translators":null,"contributors":null,"locales":["nl"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":"42.0a1","maxVersion":"*"}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":2,"seen":true}
+1589522272082	DeferredSave.extensions.json	DEBUG	Save changes
+1589522272082	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522272082	addons.xpi-utils	DEBUG	Updating add-on states
+1589522272083	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522272086	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522272087	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522272089	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522272089	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522272113	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522272113	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522272114	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522272121	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522272121	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522272121	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522272122	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522272122	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522272122	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522274296	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522274306	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522274306	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522274307	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522274335	DeferredSave.extensions.json	DEBUG	Starting write
+1589522274549	addons.repository	DEBUG	No addons.json found.
+1589522274549	DeferredSave.addons.json	DEBUG	Save changes
+1589522274553	DeferredSave.addons.json	DEBUG	Starting timer
+1589522274791	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522274791	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522274792	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522274797	DeferredSave.addons.json	DEBUG	Starting write
+1589522274803	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522274836	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: https://static-media-prod-cdn.itsre-sumo.mozilla.net/static/build/common-min.04eaf3952519.js, line 1: TypeError: navToggle.forEach is not a function
+JavaScript warning: https://www.youtube.com/yts/jsbin/www-embed-player-vflYCjgWi/www-embed-player.js, line 12: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'DESKTOP-0UJ338V', ip: '192.168.50.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:221)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at session.seleniumpractice.execution(seleniumpractice.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+bAdvisor","creator":null,"homepageURL":null,"developers":null,"translators":null,"contributors":null,"locales":["da"]},{"name":"McAfee® WebAdvisor","description":"McAfee® WebAdvisor","creator":null,"homepageURL":null,"developers":null,"translators":null,"contributors":null,"locales":["tr"]},{"name":"McAfee® WebAdvisor","description":"McAfee® WebAdvisor","creator":null,"homepageURL":null,"developers":null,"translators":null,"contributors":null,"locales":["nl"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":"42.0a1","maxVersion":"*"}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":2,"seen":true}
+1589522272082	DeferredSave.extensions.json	DEBUG	Save changes
+1589522272082	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1589522272082	addons.xpi-utils	DEBUG	Updating add-on states
+1589522272083	addons.xpi-utils	DEBUG	Writing add-ons list
+1589522272086	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1589522272087	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1589522272087	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0
+1589522272089	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1589522272089	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.2.6
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1589522272113	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1589522272113	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1589522272113	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1589522272114	addons.manager	DEBUG	Starting provider: GMPProvider
+1589522272121	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1589522272121	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1589522272121	addons.manager	DEBUG	Starting provider: PluginProvider
+1589522272122	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1589522272122	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1589522272122	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1589522274296	DeferredSave.extensions.json	DEBUG	Starting timer
+1589522274306	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1589522274306	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1589522274307	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1589522274335	DeferredSave.extensions.json	DEBUG	Starting write
+1589522274549	addons.repository	DEBUG	No addons.json found.
+1589522274549	DeferredSave.addons.json	DEBUG	Save changes
+1589522274553	DeferredSave.addons.json	DEBUG	Starting timer
+1589522274791	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1589522274791	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1589522274792	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1589522274797	DeferredSave.addons.json	DEBUG	Starting write
+1589522274803	DeferredSave.extensions.json	DEBUG	Write succeeded
+1589522274836	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: https://static-media-prod-cdn.itsre-sumo.mozilla.net/static/build/common-min.04eaf3952519.js, line 1: TypeError: navToggle.forEach is not a function
+JavaScript warning: https://www.youtube.com/yts/jsbin/www-embed-player-vflYCjgWi/www-embed-player.js, line 12: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 32 more
+</pre></div></td>
+<td>47</td>
+<td>session.seleniumpractice@16a51ab</td></tr>
+</table><p>
+</body>
+</html>
